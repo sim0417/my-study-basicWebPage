@@ -1,0 +1,91 @@
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'BMJUA';
+}
+
+.navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header{
+    margin-top: 56px;
+}
+
+header > .jumbotron
+{
+    background : url(../imgs/heading.jpg) no-repeat fixed center;
+    background-size: cover;
+    color: white;
+}
+
+#sc-about > .sc-about-container
+{
+    display: flex;
+    margin: 25px;
+}
+
+.sc-about-container > .sc-about-img
+{
+    flex-basis: 50%;
+    margin: 15px;
+}
+
+.sc-about-container > .sc-about-img > img
+{
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sc-about-container > .sc-about-content
+{
+    flex-basis: 50%;
+    margin: 15px;
+    font-size: 24px;
+}
+
+#sc-team > .sc-team-container{
+    display: flex;
+    justify-content: center;
+}
+
+.sc-team-container > .card{
+    margin: 0px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sc-map > .sc-map-container > iframe{
+    width: 100%;
+}
+
+footer > .jumbotron{
+    margin: 0;
+}
+
+@media screen and (max-width: 768px){
+    /* Mobile style */
+    #sc-about > .sc-about-container
+    {
+        flex-direction: column;
+    }
+    #sc-team > .sc-team-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .sc-team-container > .card{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+}
